@@ -449,10 +449,10 @@ Publish the website in the LocalHost.
 
 
 ## OUTPUT:
-![img 1](https://github.com/23004205/Pharma/assets/138971114/4771206e-4f61-4174-a2dc-6b38a831ba07)
-![img 2](https://github.com/23004205/Pharma/assets/138971114/31a12f35-928d-4581-9ac1-b60b0c5c7c7a)
-![img 3](https://github.com/23004205/Pharma/assets/138971114/ff081043-dd10-4bf3-a464-d84bae3fc320)
-![img 4](https://github.com/23004205/Pharma/assets/138971114/b38737e6-c198-4235-b62d-595b94540951)
+![image](https://github.com/harshinis1910/Pharma/assets/169695433/df8a1b6a-5b91-4588-9b59-6fc46b2b57cb)
+![image](https://github.com/harshinis1910/Pharma/assets/169695433/ad35a3c2-0ca8-4a45-972d-d3355bb542b1)
+![image](https://github.com/harshinis1910/Pharma/assets/169695433/907b24b3-c49b-4db9-b66d-765f6eba94ca)
+![image](https://github.com/harshinis1910/Pharma/assets/169695433/15119910-ad84-4ecd-99dd-57226cf81662)
 
 
 ## RESULT:
