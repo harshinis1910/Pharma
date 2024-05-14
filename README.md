@@ -1,459 +1,328 @@
-# Project Responsive Web Design using Bootstrap
-
+# Ex.07 Software Product Company Website
+## Date:
 
 ## AIM:
-To design a responsive website for a Pharmaceutical Company using Bootstrap.
-
+To develop a static company website to display the softwares and services provided by the company.
 
 ## DESIGN STEPS:
 
 ### Step 1:
-Clone the repository from GitHub.
+Requirement collection.
 
 ### Step 2:
-Create Django Admin project.
+Creating the layout using HTML and CSS.
 
 ### Step 3:
-Create a New App under the Django Admin project.
+Updating the sample content.
 
 ### Step 4:
-Insert the necessary CSS and JavaScript files as external in order to use Bootstrap.
+Choose the appropriate style and color scheme.
 
 ### Step 5:
-Create a HTML file and include the needed Bootstrap components.
+Validate the layout in various browsers.
 
 ### Step 6:
-Publish the website in the LocalHost.
+Validate the HTML code.
 
-## PROGRAM :
+### Step 7:
+Publish the website in the given URL.
 
-### web.html
+## PROGRAM:
 ```
+PEOPLE.HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jai Pradhiksha</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    /*background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWuaguLIFTiHsLYyNqiNpqcNLpzWMXHvbcBQ&s');*/
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  .product {
+    width: calc(20% - 20px);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .product img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .product h2 {
+    margin-top: 0;
+  }
+  .search-bar {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  header {
+    padding-top: 10px 20px;
+    background-color: red;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header img {
+    width: 1000px;
+  }
+  .right-end {
+    display: flex;
+    align-items: center;
+  }
+  .right-end span {
+    margin-left: 20px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1 style="color: #fff;">People</h1>
+    <div class="right-end">
+      <span style="margin-left: 1200px; color:#fff">Login</span>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <input type="text" class="search-bar" placeholder="Search for people...">
+  <div class="product">
+    <img src="data:image/jpeg;base64,/ alt="Product 1">
+    <h2>Bill gates</h2>
+    <p>American businessman, investor, philanthropist, and writer best known for co-founding the software giant Microsoft.</p>
+  </div>
+  <div class="product">
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVvdf3mtAr8BQaBqwu2wAFbJD1dH6jtmyAK7hZRRnbFc0yc_pT"/>
+        <h2>Jeff Bezos</h2>
+        <p>American businessman, media proprietor and investor. He is the founder, executive chairman, and former president and CEO of Amazon.</p>
+  </div>
+  <div class="product">
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0U5a32I81EyodYLVvHBNs7GSlBgmag51JRMz_0RQ2DqthEDKr"/>
+    <h2>Warren Buffet</h2>
+    <p>American businessman, investor, and philanthropist who currently serves as the co-founder, chairman and CEO of Berkshire Hathaway.</p>
+    </div>
+  <div class="product">
+    <img src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTqfkApl2zCLk_pG2PwOqSQd4dz0BFGndlyQJQg-an2EsqDcfLjvNQMkIv1mxyJCWzL"/>
+    <h2>Larry Page</h2>
+    <p>American businessman, computer scientist, and internet entrepreneur best known for co-founding Google with Sergey Brin.</p>
+  </div> 
+</div>
+<footer style="position: fixed; left: 0; bottom: 0; width: 100%; padding-top: 20px; padding-bottom: 20px; background-color: red
+; color: #fff; text-align: center;">
+  Namitha
+</footer>
+</body>
+</html>
+
+ PRODUCT.HTML
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - PharmaCompany</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <style>
-    body {
-      background-image: url('a.jpeg');
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    footer{
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #343a40; 
-      color: white;
-      text-align: center;
-      padding: 10px 0; 
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jai Pradhiksha</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    /*background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWuaguLIFTiHsLYyNqiNpqcNLpzWMXHvbcBQ&s');*/
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  .product {
+    width: calc(20% - 20px);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .product img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .product h2 {
+    margin-top: 0;
+  }
+  .search-bar {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  header {
+    padding-top: 10px 20px;
+    background-color: red;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header img {
+    width: 1000px;
+  }
+  .right-end {
+    display: flex;
+    align-items: center;
+  }
+  .right-end span {
+    margin-left: 20px;
+  }
+</style>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">PharmaCompany</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="web.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="product.html">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Register</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-8">
-        <h1>Welcome to PharmaCompany</h1>
-        <p>Welcome to PharmaCompany, your trusted source for high-quality pharmaceutical products. We are dedicated to improving the health and well-being of our customers by providing safe and effective medications.</p>
-        <p>At PharmaCompany, we offer a wide range of prescription and over-the-counter medications to meet your healthcare needs. Whether you're managing a chronic condition or simply looking for relief from minor ailments, we have the products you need.</p>
-        <p>Thank you for choosing PharmaCompany for your healthcare needs. We look forward to serving you and helping you live a healthier life.</p>
-      </div>
-      <div class="col-md-4">
-       
-      </div>
+<header>
+  <div class="container">
+    <div class="right-end">
+      <span style="margin-left: 1200px; color:#fff">Login</span>
     </div>
   </div>
+</header>
+<div class="container">
+  <input type="text" class="search-bar" placeholder="Search for products...">
+  <div class="product">
+    <img src="https://5.imimg.com/data5/SELLER/Default/2021/9/HR/PW/SE/32162519/vivo-mobile-phone.png" alt="Product 1">
+    <h2>Mobiles</h2>
+  </div>
+  <div class="product">
+    <img src="data:image/jpeg;base64,alt="Product 1">
+    <h2>Lipsticks</h2>
+  </div>
+  <div class="product">
+    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/May/8th/QC_Watch-PC2low._SY116_CB558385574_.jpg" alt="Product 1">
+    <h2>Watches</h2>
+  </div>
+  <div class="product">
+    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/OOC/Gateway/wk_19/PC_CC_379x304-1._SY304_CB558452919_.jpg" alt="Product 1">
+    <h2>Accesories</h2>
+  </div>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4 mt-5">
-    <p>&copy; 2024 PharmaCompany. All rights reserved.</p>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <div class="product">
+    <img src="https://m.media-amazon.com/images/I/51RXzjrUmkL._AC_SY200_.jpg" alt="Product 2">
+    <h2>Kitchen Products</h2>
+  </div>
+  <div class="product">
+    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Symbol/2024/GW_Mar/25th/Combo_low_res_2_1_1_1_1._SY304_CB579829084_.jpg" alt="Product 2">
+    <h2>Clothings</h2>
+  </div>
+  <div class="product">
+    <img src="https://m.media-amazon.com/images/I/81S6A4v-waL._AC_SY200_.jpg" alt="Product 2">
+    <h2>Electronics</h2>
+  </div>
+  <div class="product">
+    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/May/8th/QC_Jewl-PCLow._SY116_CB558385574_.jpg" alt="Product 2">
+    <h2>Jewellery</h2>
+  </div>
+  
+</div>
+<footer style="position: fixed; left: 0; bottom: 0; width: 100%; padding-top: 20px; padding-bottom: 20px; background-color: red; color: #fff; text-align: center;">
+  Namitha
+</footer>
 </body>
 </html>
-```
-### about.html
-```
 
+ CONTACT.HTML
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About PharmaCompany</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <style>
-    body {
-      background-image: url('a.jpeg');
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    footer{
-    position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #343a40; 
-      color: white;
-      text-align: center;
-      padding: 10px 0; 
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jai Pradhiksha</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    /*background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWuaguLIFTiHsLYyNqiNpqcNLpzWMXHvbcBQ&s');*/
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  header {
+    padding-top: 10px 20px;
+    background-color: red;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header img {
+    width: 1000px;
+  }
+  .right-end {
+    display: flex;
+    align-items: center;
+  }
+  .right-end span {
+    margin-left: 20px;
+  }
+</style>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">PharmaCompany</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="web.html">Home</a>
-        </li>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-            <a class="dropdown-item" href="#vision">Vision</a>
-            <a class="dropdown-item" href="#mission">Mission</a>
-            <a class="dropdown-item" href="#values">Values</a>
-            <!-- Add more subheadings as needed -->
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="product.html">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>About PharmaCompany</h1>
-        <div id="vision">
-          <h2>Vision</h2>
-          <p>Our vision is to be a leading provider of innovative healthcare solutions that improve the quality of life for people around the world.</p>
-        </div>
-        <div id="mission">
-          <h2>Mission</h2>
-          <p>Our mission is to develop and deliver safe, effective, and affordable medications that address the healthcare needs of our customers.</p>
-        </div>
-        <div id="values">
-          <h2>Values</h2>
-          <ul>
-            <li>Quality: We are committed to maintaining the highest standards of quality in everything we do.</li>
-            <li>Integrity: We conduct our business with honesty, transparency, and ethical behavior.</li>
-            <li>Innovation: We strive to continuously innovate and improve our products and services to better serve our customers.</li>
-            <li>Customer Focus: We are dedicated to understanding and meeting the needs of our customers.</li>
-            <li>Teamwork: We work together as a team to achieve our goals and deliver exceptional results.</li>
-          </ul>
-        </div>
-        <!-- Add more subheadings as needed -->
-      </div>
+<header>
+  <div class="container">
+    <h1 style="color: #fff;">Contact Us</h1>
+    <div class="right-end">
+      <span style="margin-left: 1200px; color:#fff">Logout</span>
     </div>
   </div>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4 mt-5">
-    <p>&copy; 2024 PharmaCompany. All rights reserved.</p>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</header>
+<div class="container">
+    <div class="card" style="margin-top: 300px;">
+        <h2 style="color: red;">Contact Details</h2>
+        <div class="contact-info">
+          <p>Email: namitha@gmail.com</p>
+          <p>Phone: +1234567890</p>
+          <p>Address: 123 Street, Chennai, India</p>
+        </div>
+      </div>
+</div>
+<footer style="position: fixed; left: 0; bottom: 0; width: 100%; padding-top: 20px; padding-bottom: 20px; background-color: red; color: #fff; text-align: center;">
+  Namitha
+</footer>
 </body>
 </html>
 ```
-### product.html
-```
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products - PharmaCompany</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <style>
-    body {
-      background-image: url('a.jpeg');
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    footer{
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #343a40; 
-      color: white;
-      text-align: center;
-      padding: 10px 0; 
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">PharmaCompany</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="web.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="product.html">Products <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Register</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Our Products</h1>
-        <div class="card-deck">
-          <div class="card">
-            <img src="i.jpg" class="card-img-top" alt="Product 1">
-            <div class="card-body">
-              <h5 class="card-title">Product 1</h5>
-              <p class="card-text">Everherb Karela Jamun Juice - Helps Maintains Healthy Sugar Levels -Helps In Weight Management - 1l.</p>
-              <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="j.jpeg" class="card-img-top" alt="Product 2">
-            <div class="card-body">
-              <h5 class="card-title">Product 2</h5>
-              <p class="card-text">Calcimax Forte Plus Strip Of 30 Tablets.</p>
-              <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="k.jpeg" class="card-img-top" alt="Product 3">
-            <div class="card-body">
-              <h5 class="card-title">Product 3</h5>
-              <p class="card-text">Healthkart Calcium Tablets For Men & Women With Vitamin D3 For Complete Bone Health & Joint (60 No).</p>
-              <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4 mt-5">
-    <p>&copy; 2024 PharmaCompany. All rights reserved.</p>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
-```
-### contact.html
-```
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - PharmaCompany</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <style>
-    body {
-      background-image: url('a.jpeg');
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    footer{
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #343a40; 
-      color: white;
-      text-align: center;
-      padding: 10px 0; 
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">PharmaCompany</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="web.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="product.html">Products</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-8">
-        <h1>Contact Us</h1>
-        <p>For any inquiries or feedback, please fill out the form below and we will get back to you as soon as possible.</p>
-        <form>
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-      <div class="col-md-4">
-        <h2>PharmaCompany</h2>
-        <address>
-          <strong>Address:</strong><br>
-          123 ABC street, Chennai<br>
-          India, 632007<br><br>
-          <strong>Email:</strong><br>
-          info@pharmacompany.com<br><br>
-          <strong>Phone:</strong><br>
-          +1234567890
-        </address>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4 mt-5">
-    <p>&copy; 2024 PharmaCompany. All rights reserved.</p>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
-```
-
-
-
 ## OUTPUT:
-![image](https://github.com/harshinis1910/Pharma/assets/169695433/df8a1b6a-5b91-4588-9b59-6fc46b2b57cb)
-![image](https://github.com/harshinis1910/Pharma/assets/169695433/ad35a3c2-0ca8-4a45-972d-d3355bb542b1)
-![image](https://github.com/harshinis1910/Pharma/assets/169695433/907b24b3-c49b-4db9-b66d-765f6eba94ca)
-![image](https://github.com/harshinis1910/Pharma/assets/169695433/15119910-ad84-4ecd-99dd-57226cf81662)
-
-
+![WhatsApp Image 2024-05-13 at 10 55 01](https://github.com/NamithaS2710/softweb/assets/133190822/f441a413-7813-43e8-96c4-cda0a40cc0d9)
+![WhatsApp Image 2024-05-13 at 10 57 14](https://github.com/NamithaS2710/softweb/assets/133190822/e2c86f55-c3ea-4b8c-9886-eafb8c3db11a)
+![WhatsApp Image 2024-05-13 at 10 59 33](https://github.com/NamithaS2710/softweb/assets/133190822/e087dbfa-6052-4e85-a61f-ee1b2f7c5c11)
 ## RESULT:
-The Project for responsive web design using Bootstrap is completed successfully.
+The program for designing software company website using HTML and CSS is completed successfully.
